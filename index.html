@@ -1,76 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Academic Records</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Welcome to My Academic Records</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Haradhan Adhikary - Academic Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Dr. Haradhan Adhikary</h1>
+      <p>Postdoctoral Researcher in Neutrino Physics | Experimental Nuclear Physics</p>
       <nav>
         <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#records">Academic Records</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Hi! I'm [Your Name], a passionate [Your Field] student specializing in
-        [Your Specialization].
-      </p>
-    </section>
+  <section id="hero">
+    <h2>Welcome to My Academic Portfolio</h2>
+    <p>Explore my research, academic achievements, and contributions to the field of physics.</p>
+    <a href="#about" class="btn">Learn More</a>
+  </section>
 
-    <section id="records">
-      <h2>Academic Records</h2>
-      <ul>
-        <li>
-          <strong>Bachelor's Degree:</strong> [Your Degree] - [Your University]
-        </li>
-        <li>
-          <strong>High School:</strong> [Your High School] - GPA: [Your GPA]
-        </li>
-        <li><strong>Certifications:</strong> [List your certifications]</li>
-      </ul>
-    </section>
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>I am a dedicated researcher specializing in Neutrino Physics and Experimental Nuclear Physics, currently working on the T2K and SK collaborations at the University of Warsaw.</p>
+    <ul>
+      <li><strong>Nationality:</strong> Indian</li>
+      <li><strong>Contact:</strong> <a href="mailto:h.adhikary@uw.edu.pl">h.adhikary@uw.edu.pl</a></li>
+      <li><strong>ORCID ID:</strong> 0000-0002-5746-1268</li>
+    </ul>
+  </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Project 1: [Title]</h3>
-        <p>[Description of the project]</p>
-        <a href="#" target="_blank">View Project</a>
-      </div>
-      <div class="project">
-        <h3>Project 2: [Title]</h3>
-        <p>[Description of the project]</p>
-        <a href="#" target="_blank">View Project</a>
-      </div>
-    </section>
+  <section id="research" class="container">
+    <h2>Research Highlights</h2>
+    <div class="research-item">
+      <h3>Postdoctoral Research</h3>
+      <p>Conducting neutrino and anti-neutrino oscillation studies in the Super-Kamiokande detector, as part of the T2K and SK collaborations.</p>
+    </div>
+    <div class="research-item">
+      <h3>PhD Research</h3>
+      <p>Investigated the critical point of strongly interacting matter using proton intermittency analysis for NA61/SHINE data at CERN SPS.</p>
+      <p>Thesis: <a href="https://cds.cern.ch/record/2895171" target="_blank">Search for the Critical Point of Strongly Interacting Matter</a></p>
+    </div>
+  </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form id="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
+  <section id="publications" class="container">
+    <h2>Publications</h2>
+    <ul>
+      <li><strong>Published:</strong> <a href="https://arxiv.org/abs/2401.03445" target="_blank">Search for a critical point in Ar+Sc collisions</a> (Eur.Phys.J.C 84, 2024)</li>
+      <li><strong>In Progress:</strong> Manuscript on Pb+Pb collision analysis</li>
+      <li>Co-author: Multiple NA61/SHINE Collaboration publications (<a href="https://cernbox.cern.ch/s/Y0DgqBxpvrNascb" target="_blank">View Publications</a>)</li>
+    </ul>
+  </section>
 
-    <footer>
-      <p>&copy; 2024 [Your Name]. All rights reserved.</p>
-    </footer>
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Neutrino Oscillation</strong> - Supervised by Prof. Avinash Khare at Pune University.</li>
+      <li><strong>Kinematics of Vector Boson Fusion</strong> - CMS Collaboration, supervised by Prof. Kajari Mazumdar at TIFR.</li>
+    </ul>
+  </section>
 
-    <script src="script.js"></script>
-  </body>
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Dr. Haradhan Adhikary. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
+
